@@ -1,0 +1,53 @@
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/image_view_card"
+            android:background="@color/lightgray"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:id="@+id/image_view_play"
+                android:layout_gravity="right"
+                style="@style/PlayButtonStyle"
+                android:src="@drawable/speacker"
+                android:clickable="true" />
+            <TextView
+                android:id="@+id/text_view_English_word"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="24sp"
+                tools:text="Yellow"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/text_view_maori_word"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="24sp"
+                tools:text="Kowhai"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

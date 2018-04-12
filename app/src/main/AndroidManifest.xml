@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="website.elpato.www.learnmaoribyelpato">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/maori"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NumbersActivity"
+            android:label="Numbers: Ngā Tau"
+            android:roundIcon="@drawable/play"
+            android:theme="@style/NumberActivityTheme" />
+        <activity
+            android:name=".learnFamilyName"
+            android:label="Family Members: Whānau"
+            android:logo="@drawable/icon_family"
+            android:theme="@style/learnFamilyNameActivityTheme" />
+        <activity
+            android:name=".learnColor"
+            android:label="Learn Color: Ngā Tae"
+            android:banner="@drawable/maori"
+            android:theme="@style/learnColorActivityTheme" />
+    </application>
+
+</manifest>

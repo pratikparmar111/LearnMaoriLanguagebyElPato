@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/Container"
+    android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_one"
+            style="@style/carviewStyleRed">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/image_view_card"
+                android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image_view_card_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_numbers"
+                android:clickable="true" />
+            <TextView
+                android:id="@+id/learnNumberLabel"
+                style="@style/CategoryTextStyle"
+                android:text="Learn Number"
+                android:textStyle="bold|italic"
+                android:layout_weight="1"
+                />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_two"
+            style="@style/carviewstyleGreen">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_family"
+                android:clickable="true" />
+            <TextView
+                android:id="@+id/learnFamilyMember"
+                style="@style/CategoryTextStyle"
+                android:text="Learn Family Member"
+                android:layout_weight="1"
+                />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_three"
+            style="@style/carviewStylBlue">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_colors"
+                android:clickable="true" />
+            <TextView
+                android:id="@+id/learnColor"
+                style="@style/CategoryTextStyle"
+                android:text="Learn Color"
+                android:layout_weight="1"
+                />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+

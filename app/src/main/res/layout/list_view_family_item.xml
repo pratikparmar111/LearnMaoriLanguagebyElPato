@@ -1,0 +1,56 @@
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:id="@+id/Parent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >
+
+        <TextView
+            android:id="@+id/text_view_English_word"
+            android:layout_centerHorizontal="true"
+            tools:text="father"
+            style="@style/EnglishTextStyle"
+          />
+
+        <TextView
+            android:id="@+id/text_view_maori_word"
+            android:layout_below="@id/text_view_English_word"
+            android:layout_centerHorizontal="true"
+            tools:text="papa"
+            style="@style/MaoriTextStyle"
+          />
+        <ImageView
+            android:id="@+id/image_view_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentRight="true"
+            tools:src="@drawable/icon_father" />
+        <ImageView
+            android:id="@+id/image_view_play"
+            style="@style/PlayButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+
+            android:clickable="true"
+
+            android:src="@drawable/speacker" />
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.CardView>
